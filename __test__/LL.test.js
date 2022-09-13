@@ -39,5 +39,31 @@ describe('insert to the beginning of the Linked list', () => {
 
    })
 
+   describe('append to the end of the Linked list', () => {
+	// if ll is empty
+	it('add to an empty ll', () => {
+
+         const ll = new LinkedList();
+		 ll.append('a');
+		 expect(ll.head.value).toEqual('a');
+		 expect(ll.head.next).toBeNull();
+
+
+	})
+})
+
+   //if ll is non-empty
+   it('add to a non-empty ll', ()=>{
+    const ll = new LinkedList();
+        ll.append('a');
+        ll.append('b');
+        ll.append('c')
+        expect(ll.head.value).toEqual('a');
+        expect(ll.head.next.value).toEqual('b');
+        expect(ll.head.next.next.value).toEqual('c');
+        expect(ll.head.next.next.next).toBeNull();
+
+   })
+
 
 
