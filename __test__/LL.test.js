@@ -65,5 +65,19 @@ describe('insert to the beginning of the Linked list', () => {
 
    })
 
+   describe('add a node in a specific location', () => {
+    it('test insert node in a specific location', () => {
+        const ll = new LinkedList();
+        ll.append('a');
+        ll.append('c');
+        ll.append('d');
+        ll.insertTo('b', 2);
+        expect(ll.head.value).toEqual('a');
+        expect(ll.head.next.value).toEqual('b');
+        expect(ll.head.next.next.value).toEqual('c');
+    })
+})
+
+
 
 

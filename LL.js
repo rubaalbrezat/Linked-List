@@ -33,6 +33,22 @@ class LinkedList {
         }
     }
 
+	insertTo(newAddedNode, location) {
+        let baseNode = this.head;
+        let counter = 1;
+        while (baseNode.next) {
+            if (counter == location - 1) {
+                let newNode = new Node(newAddedNode);
+                newNode.next = baseNode.next;
+                baseNode.next = newNode;
+
+            }
+            baseNode=baseNode.next;
+            counter++;
+        }
+
+    }
+
 }
 
 
