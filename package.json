@@ -1,0 +1,24 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "Node.js",
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubaalbrezat/Linked-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubaalbrezat/Linked-List/issues"
+  },
+  "homepage": "https://github.com/rubaalbrezat/Linked-List#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
